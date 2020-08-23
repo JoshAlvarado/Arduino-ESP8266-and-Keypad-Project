@@ -17,10 +17,10 @@ byte colPins[COLS] = {D4, D5, D6, D7};
 
 Keypad keypad = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS );
 int ledPin = D8;
-const char* ssid="Joshua";
-const char* password = "Cacajo33";
-#define IFTTT_Key "lqIz3vWs8R4XWIyOmZlSRLjrHXMvdDjZ-bmXYYRAIVw"
-#define IFTTT_Event "chores"
+const char* ssid="xxx";
+const char* password = "xxx";
+#define IFTTT_Key "x-xx"
+#define IFTTT_Event "xxx"
 void setup() {
   
   pinMode(ledPin,OUTPUT);
@@ -56,7 +56,7 @@ void loop(){
     Serial.println(key);
   } 
   
-  // this checkes if 4 is pressed, then do something. Here  we print the text but you can control something.
+  // When a specific key is pressed activate
   if (key =='1'){
     Serial.println("Key 1 is pressed");
     send_webhook(IFTTT_Event,IFTTT_Key,"TAKE OUT THE TRASH","value 2","value 3"); 
