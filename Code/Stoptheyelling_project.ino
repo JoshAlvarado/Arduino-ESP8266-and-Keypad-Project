@@ -1,3 +1,6 @@
+// Joshua Alvarado
+// Josh.alvarado0328@gmail.com
+// 8-23-2020
 #include <ESP8266WiFi.h>
 #include <Keypad.h>
 #include <ESP8266HTTPClient.h>
