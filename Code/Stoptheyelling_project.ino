@@ -12,13 +12,13 @@ char keys[ROWS][COLS] = {
   {'*','0','#','D'}
 };
 
-byte rowPins[ROWS] = {D0, D1, D2, D3}; 
-byte colPins[COLS] = {D4, D5, D6, D7}; 
+byte rowPins[ROWS] = {D0, D1, D2, D3}; //change with your respective pins
+byte colPins[COLS] = {D4, D5, D6, D7}; //change with your respective pins
 
 Keypad keypad = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS );
 int ledPin = D8;
-const char* ssid="xxx";
-const char* password = "xxx";
+const char* ssid="xxx"; //wifi name
+const char* password = "xxx"; //wifi password
 #define IFTTT_Key "x-xx"
 #define IFTTT_Event "xxx"
 void setup() {
